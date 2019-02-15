@@ -11,14 +11,14 @@ namespace Task4
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int[,] b = new int[n, n];
+            int[,] b = new int[n, n];  // объявление двойного массива 
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++)  // размер массива 
             {
                 Console.WriteLine();
                 for (int j = 1; j <= i; j++)
                 {
-                    Console.Write("[*]" + " ");
+                    Console.Write("[*]" + " ");   //вывод
 
                 }
             }
