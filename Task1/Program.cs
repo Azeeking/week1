@@ -14,7 +14,7 @@ namespace Task1
             else
             {
                 bool k = true;
-                for (int i = 2; i < n; i++)
+                for (int i = 2; i < n; i++)    // функция для нахождения prime numbers
                 {
                     if (n % i == 0)
                     {
@@ -27,24 +27,24 @@ namespace Task1
         }
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            string s = Console.ReadLine();
-            string[] a = s.Split();
-            int[] b = new int[n];
-            for (int i = 0; i < n; i++)
+            int n = int.Parse(Console.ReadLine());   // перевод в числа   
+            string s = Console.ReadLine();     
+            string[] a = s.Split();    
+            int[] b = new int[n];     // массив 
+            for (int i = 0; i < n; i++)    // через форик вводим число скок должно быть чисел 
             {
-                b[i] = int.Parse(a[i]);
+                b[i] = int.Parse(a[i]);   
             }
             int cnt = 0;
             for (int i = 0; i < n; i++)
             {
-                if (f(b[i]) == false) b[i] = 0;
+                if (f(b[i]) == false) b[i] = 0;  // определяем prime numbers ли 
                 else cnt++;
             }
             Console.WriteLine(cnt);
             for (int i = 0; i < n; i++)
             {
-                if (b[i] != 0) Console.Write(b[i] + " ");
+                if (b[i] != 0) Console.Write(b[i] + " "); // выводим prime numbers
 
             }
             Console.ReadKey();
