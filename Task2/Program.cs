@@ -13,7 +13,7 @@ namespace Task2
         public string yearofstudy;
        
 
-        public Student(string name, string id, string yearofstudy)
+        public Student(string name, string id, string yearofstudy) // конструктор с 3 параметрами
         {
             this.name = name;
             this.id = id;
@@ -22,7 +22,7 @@ namespace Task2
         }
         public void Taken()
         {
-            Console.WriteLine(name + " " + id + " " + yearofstudy);
+            Console.WriteLine(name + " " + id + " " + yearofstudy);   // вывод данных 
             
         }
 
